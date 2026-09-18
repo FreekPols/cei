@@ -61,7 +61,7 @@ When we draw a circuit, though, things are a bit different than when we consider
 
 In our theoretical lectures, we will draw circuit elements connected by wires, and it is very important to understand what these wires mean when we draw them. Specifically, thess are special theoretical "ideal wires. In ideal wires, the voltage *everywhere* in that wire is always the same, instantaneously! In our schematics, the voltage across anything we draw a "wire" is **always** by definition zero.
 
-```python
+```{code-cell} python
 import schemdraw 
 import schemdraw.elements as elm
 

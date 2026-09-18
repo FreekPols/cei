@@ -1,3 +1,8 @@
+---
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
+---
 (lecture1)=
 # Review of Voltages, Currents, and Kirchoffs Laws
 

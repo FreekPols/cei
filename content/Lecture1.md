@@ -63,6 +63,8 @@ In our theoretical lectures, we will draw circuit elements connected by wires, a
 
 ```{code-cell} python
 :tag: hide-input
+:class: centered-output
+
 import schemdraw 
 import schemdraw.elements as elm
 

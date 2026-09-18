@@ -57,13 +57,20 @@ When we draw a circuit, though, things are a bit different than when we consider
 In our theoretical lectures, we will draw circuit elements connected by wires, and it is very important to understand what these wires mean when we draw them. Specifically, thess are special theoretical "ideal wires. In ideal wires, the voltage *everywhere* in that wire is always the same, instantaneously! In our schematics, the voltage across anything we draw a "wire" is **always** by definition zero.
 
 ```python
+schemdraw
+```
+
+```python
+import schemdraw 
+import schemdraw.elements as elm
+
 with schemdraw.Drawing():
     R1 = elm.Resistor().dot()
     R2 = elm.Resistor().down().dot()
     L = elm.Line().left().dot()
     elm.SourceV().up().label('10V').dot()
-    elm.VoltageLabelArc().at(R1).label(r'$\DeltaV_1$')
-    elm.VoltageLabelArc().at(R2).label(r'$\DeltaV_2$')
+    elm.VoltageLabelArc().at(R1).label(r'$\Delta V_1$')
+    elm.VoltageLabelArc().at(R2).label(r'$\Delta V_2$')
     elm.VoltageLabelArc().at(L).label(r'$\Delta$V = 0 Always for (ideal) wires!')
 ```
 
